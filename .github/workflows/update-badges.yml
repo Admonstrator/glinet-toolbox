@@ -21,7 +21,7 @@ jobs:
           # Function to get repo stats
           get_repo_stats() {
             local repo=$1
-            echo "Fetching stats for $repo..."
+            echo "Fetching stats for $repo..." >&2
             
             # Get repository data
             response=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
@@ -36,16 +36,16 @@ jobs:
             
             latest_release=$(echo "$release_response" | jq -r '.tag_name // "N/A"')
             
-            echo "${repo}_stars=$stars"
-            echo "${repo}_forks=$forks"
-            echo "${repo}_release=$latest_release"
+            echo "${repo}_stars=$stars" >> $GITHUB_OUTPUT
+            echo "${repo}_forks=$forks" >> $GITHUB_OUTPUT
+            echo "${repo}_release=$latest_release" >> $GITHUB_OUTPUT
           }
           
           # Fetch stats for all repos
-          get_repo_stats "glinet-tailscale-updater" >> $GITHUB_OUTPUT
-          get_repo_stats "glinet-adguard-updater" >> $GITHUB_OUTPUT
-          get_repo_stats "glinet-enable-acme" >> $GITHUB_OUTPUT
-          get_repo_stats "glinet.forum" >> $GITHUB_OUTPUT
+          get_repo_stats "glinet-tailscale-updater"
+          get_repo_stats "glinet-adguard-updater"
+          get_repo_stats "glinet-enable-acme"
+          get_repo_stats "glinet.forum"
       
       - name: Update README with static badges
         run: |
