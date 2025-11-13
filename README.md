@@ -1,0 +1,221 @@
+# 🧰 GL.iNet Toolbox
+
+<div align="center">
+
+![GL.iNet Logo](https://static.gl-inet.com/www/images/logo/gl-inet-logo-new.svg)
+
+**A comprehensive collection of tools and scripts for GL.iNet routers**
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![GitHub Stars](https://img.shields.io/github/stars/Admonstrator/glinet-toolbox?style=social)](https://github.com/Admonstrator/glinet-toolbox/stargazers)
+[![Forum](https://img.shields.io/badge/GL.iNet-Forum-blue)](https://forum.gl-inet.com/u/admon/)
+
+[GitHub Sponsors](https://github.com/sponsors/admonstrator) • 
+[Buy Me A Coffee](https://buymeacoffee.com/admon) • 
+[Ko-fi](https://ko-fi.com/admon) • 
+[PayPal](https://paypal.me/aaronviehl)
+
+</div>
+
+---
+
+## 📖 About
+
+Welcome to the **GL.iNet Toolbox** – your central hub for powerful utilities designed to enhance and maintain your GL.iNet router! This collection brings together various scripts and tools that help you keep your router's software up-to-date, secure, and feature-rich.
+
+All tools are developed with the GL.iNet community in mind, tested on real hardware, and designed to be safe and easy to use.
+
+---
+
+## 🚀 Featured Tools
+
+### 🦭 [Tailscale Updater](https://github.com/Admonstrator/glinet-tailscale-updater)
+
+[![Stars](https://img.shields.io/github/stars/Admonstrator/glinet-tailscale-updater?style=flat-square)](https://github.com/Admonstrator/glinet-tailscale-updater/stargazers)
+[![Forks](https://img.shields.io/github/forks/Admonstrator/glinet-tailscale-updater?style=flat-square)](https://github.com/Admonstrator/glinet-tailscale-updater/network)
+[![License](https://img.shields.io/github/license/Admonstrator/glinet-tailscale-updater?style=flat-square)](https://github.com/Admonstrator/glinet-tailscale-updater/blob/main/LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/Admonstrator/glinet-tailscale-updater?style=flat-square)](https://github.com/Admonstrator/glinet-tailscale-updater/releases/latest)
+
+Keep Tailscale up-to-date on your GL.iNet router with ease! This script automatically fetches and installs the latest Tailscale version, optimized specifically for GL.iNet routers.
+
+**Key Features:**
+- 🚀 Automatic updates to the latest Tailscale version
+- 📦 Tiny version support (optimized binaries)
+- 🗜️ UPX compression for minimal storage usage
+- 🔒 Built-in Tailscale SSH support
+- 🎯 Version selection for specific releases
+- 🔧 Automatic stateful filtering configuration
+
+**Perfect for:** Exit nodes, VPN mesh networks, secure remote access
+
+[**→ Go to Tailscale Updater**](https://github.com/Admonstrator/glinet-tailscale-updater)
+
+---
+
+### 🛡️ [AdGuard Home Updater](https://github.com/Admonstrator/glinet-adguard-updater)
+
+[![Stars](https://img.shields.io/github/stars/Admonstrator/glinet-adguard-updater?style=flat-square)](https://github.com/Admonstrator/glinet-adguard-updater/stargazers)
+[![Forks](https://img.shields.io/github/forks/Admonstrator/glinet-adguard-updater?style=flat-square)](https://github.com/Admonstrator/glinet-adguard-updater/network)
+[![License](https://img.shields.io/github/license/Admonstrator/glinet-adguard-updater?style=flat-square)](https://github.com/Admonstrator/glinet-adguard-updater/blob/main/LICENSE)
+[![Latest Release](https://img.shields.io/github/v/release/Admonstrator/glinet-adguard-updater?style=flat-square)](https://github.com/Admonstrator/glinet-adguard-updater/releases/latest)
+
+Keep AdGuard Home up-to-date on your GL.iNet router! This script updates the deeply integrated AdGuard Home installation while preserving your configurations and settings.
+
+**Key Features:**
+- 🚀 Automatic updates to the latest AdGuard Home version
+- 📦 Pre-compressed binaries (6 MB vs 32 MB)
+- 🎯 Version selection support
+- 💾 Query logging control
+- 🔄 Persistence across firmware upgrades
+- 🛡️ Automatic backups before updates
+
+**Perfect for:** Ad blocking, privacy protection, DNS filtering
+
+[**→ Go to AdGuard Home Updater**](https://github.com/Admonstrator/glinet-adguard-updater)
+
+---
+
+### 🔐 [ACME Certificate Manager](https://github.com/Admonstrator/glinet-enable-acme)
+
+[![Stars](https://img.shields.io/github/stars/Admonstrator/glinet-enable-acme?style=flat-square)](https://github.com/Admonstrator/glinet-enable-acme/stargazers)
+[![Forks](https://img.shields.io/github/forks/Admonstrator/glinet-enable-acme?style=flat-square)](https://github.com/Admonstrator/glinet-enable-acme/network)
+[![License](https://img.shields.io/github/license/Admonstrator/glinet-enable-acme?style=flat-square)](https://github.com/Admonstrator/glinet-enable-acme/blob/main/LICENSE)
+
+Enable ACME (Automated Certificate Management Environment) for your GL.iNet router's DDNS domain. Get free, trusted SSL/TLS certificates automatically!
+
+**Key Features:**
+- 🔒 Automatic SSL/TLS certificate generation
+- 🔄 Automatic renewal via cron job
+- 🌐 Works with GL.iNet DDNS service
+- ✅ nginx auto-configuration
+- 🎯 Simple one-command setup
+
+**Perfect for:** Secure web interface access, HTTPS-only configurations
+
+[**→ Go to ACME Certificate Manager**](https://github.com/Admonstrator/glinet-enable-acme)
+
+---
+
+### 💬 [GL.iNet Forum Collection](https://github.com/Admonstrator/glinet.forum)
+
+[![Stars](https://img.shields.io/github/stars/Admonstrator/glinet.forum?style=flat-square)](https://github.com/Admonstrator/glinet.forum/stargazers)
+[![Forks](https://img.shields.io/github/forks/Admonstrator/glinet.forum?style=flat-square)](https://github.com/Admonstrator/glinet.forum/network)
+[![License](https://img.shields.io/github/license/Admonstrator/glinet.forum?style=flat-square)](https://github.com/Admonstrator/glinet.forum/blob/main/LICENSE)
+
+A curated collection of scripts, tools, threads, and helpful resources from the GL.iNet forum community. This repository serves as a knowledge base and quick reference.
+
+**Contains:**
+- 📝 Forum thread archives
+- 🔧 Utility scripts for common tasks
+- 💡 Tips and tricks
+- 🐛 Troubleshooting guides
+- 🌐 DDNS helper scripts
+
+**Perfect for:** Community contributions, forum reference materials
+
+[**→ Go to Forum Collection**](https://github.com/Admonstrator/glinet.forum)
+
+---
+
+## 📋 Compatibility
+
+All tools support GL.iNet routers with firmware 4.x, including:
+
+- ✅ GL-MT6000 (Flint 2)
+- ✅ GL-BE9300 (Flint 3)
+- ✅ GL-AXT1800 (Slate AX)
+- ✅ GL-A1300 (Slate Plus)
+- ✅ GL-AR750S (Slate)
+- ✅ And many more GL.iNet models
+
+**Architectures supported:** arm64, armv7, mips, mipsle, x86_64
+
+---
+
+## ⚠️ Important Notes
+
+- 📌 **Manual execution recommended** – Do not run these scripts as cron jobs unless explicitly mentioned
+- 💾 **Backup your configuration** – Always backup before making system changes
+- 🔒 **SSH access required** – You'll need SSH access to your router
+- 🌐 **Internet connection needed** – Scripts download updates from official sources
+
+---
+
+## 💡 Getting Help
+
+Need assistance or have questions?
+
+- 💬 [Join the discussion on GL.iNet Forum](https://forum.gl-inet.com/u/admon/)
+- 🐛 [Report issues on GitHub](https://github.com/Admonstrator)
+- 📧 Contact via forum private message
+
+---
+
+## ⚠️ Disclaimer
+
+All scripts and tools are provided **as-is** without any warranty. Use them at your own risk.
+
+They may potentially:
+- 🔥 Break your router, computer, or network
+- 🔥 Cause unexpected behavior or data loss
+- 🔥 Require firmware reflashing to recover
+- 🔥 Even burn down your house (okay, probably not, but you get the idea)
+
+**You have been warned!**
+
+Always read the documentation carefully and understand what a script does before running it.
+
+---
+
+## 👥 Community & Contributions
+
+These tools are built **by the community, for the community**. Contributions, suggestions, and feedback are always welcome!
+
+### How to Contribute
+
+1. 🍴 Fork the respective repository
+2. 🔧 Make your changes
+3. 📤 Submit a pull request
+4. 💬 Join the discussion
+
+Special thanks to all contributors and testers from the GL.iNet forum community!
+
+---
+
+## 💖 Support the Project
+
+If you find these tools helpful and want to support their continued development:
+
+<div align="center">
+
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsors-EA4AAA?style=for-the-badge&logo=github)](https://github.com/sponsors/admonstrator)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/admon)
+[![Ko-fi](https://img.shields.io/badge/Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/admon)
+[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/aaronviehl)
+
+</div>
+
+---
+
+## 📜 License
+
+All projects in the GL.iNet Toolbox are licensed under the **MIT License** – see individual repositories for details.
+
+---
+
+## 🔗 Links
+
+- 🏠 [GL.iNet Official Website](https://www.gl-inet.com/)
+- 💬 [GL.iNet Forum](https://forum.gl-inet.com/)
+- 📖 [GL.iNet Documentation](https://docs.gl-inet.com/)
+- 👤 [My Forum Profile](https://forum.gl-inet.com/u/admon/)
+
+---
+
+<div align="center">
+
+**Made with ❤️ by [Admon](https://github.com/Admonstrator) for the GL.iNet Community**
+
+⭐ If you find this useful, please star the repositories!
+
+</div>
