@@ -1,6 +1,6 @@
-# 🧰 GL.iNet Toolbox
-
 <div align="center">
+
+# 🧰 GL.iNet Toolbox
 
 ![GL.iNet Logo](https://static.gl-inet.com/www/images/logo/gl-inet-logo-new.svg)
 
@@ -8,13 +8,16 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Stars](https://img.shields.io/github/stars/Admonstrator/glinet-toolbox?style=social)](https://github.com/Admonstrator/glinet-toolbox/stargazers)
-[![Forum](https://img.shields.io/badge/GL.iNet-Forum-blue)](https://forum.gl-inet.com/u/admon/)
+[![Forum Moderator](https://img.shields.io/badge/GL.iNet-Forum%20Moderator-green)](https://forum.gl-inet.com/u/admon/)
+[![Community Projects](https://img.shields.io/badge/Community-Approved-brightgreen)](https://forum.gl-inet.com/u/admon/)
 
-[GitHub Sponsors](https://github.com/sponsors/admonstrator) • 
-[Buy Me A Coffee](https://buymeacoffee.com/admon) • 
-[Ko-fi](https://ko-fi.com/admon) • 
-[PayPal](https://paypal.me/aaronviehl)
+---
 
+## 💖 Support the Project
+
+If you find these tools helpful and want to support their continued development:
+
+[![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsors-EA4AAA?style=for-the-badge&logo=github)](https://github.com/sponsors/admonstrator) [![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/admon) [![Ko-fi](https://img.shields.io/badge/Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/admon) [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/aaronviehl)
 </div>
 
 ---
@@ -25,16 +28,16 @@ Welcome to the **GL.iNet Toolbox** – your central hub for powerful utilities d
 
 All tools are developed with the GL.iNet community in mind, tested on real hardware, and designed to be safe and easy to use.
 
+> 🎖️ **Community Maintained** – Created and maintained by [@Admon](https://forum.gl-inet.com/u/admon/), GL.iNet Forum Moderator  
+> ⚠️ **Independent Project** – Not officially affiliated with GL.iNet, but trusted by the community
+
 ---
 
 ## 🚀 Featured Tools
 
 ### 🦭 [Tailscale Updater](https://github.com/Admonstrator/glinet-tailscale-updater)
 
-[![Stars](https://img.shields.io/github/stars/Admonstrator/glinet-tailscale-updater?style=flat-square)](https://github.com/Admonstrator/glinet-tailscale-updater/stargazers)
-[![Forks](https://img.shields.io/github/forks/Admonstrator/glinet-tailscale-updater?style=flat-square)](https://github.com/Admonstrator/glinet-tailscale-updater/network)
-[![License](https://img.shields.io/github/license/Admonstrator/glinet-tailscale-updater?style=flat-square)](https://github.com/Admonstrator/glinet-tailscale-updater/blob/main/LICENSE)
-[![Latest Release](https://img.shields.io/github/v/release/Admonstrator/glinet-tailscale-updater?style=flat-square)](https://github.com/Admonstrator/glinet-tailscale-updater/releases/latest)
+[![Stars](https://img.shields.io/github/stars/Admonstrator/glinet-tailscale-updater?style=flat-square)](https://github.com/Admonstrator/glinet-tailscale-updater/stargazers) [![Forks](https://img.shields.io/github/forks/Admonstrator/glinet-tailscale-updater?style=flat-square)](https://github.com/Admonstrator/glinet-tailscale-updater/network) [![License](https://img.shields.io/github/license/Admonstrator/glinet-tailscale-updater?style=flat-square)](https://github.com/Admonstrator/glinet-tailscale-updater/blob/main/LICENSE) [![Latest Release](https://img.shields.io/github/v/release/Admonstrator/glinet-tailscale-updater?style=flat-square)](https://github.com/Admonstrator/glinet-tailscale-updater/releases/latest)
 
 Keep Tailscale up-to-date on your GL.iNet router with ease! This script automatically fetches and installs the latest Tailscale version, optimized specifically for GL.iNet routers.
 
@@ -54,10 +57,7 @@ Keep Tailscale up-to-date on your GL.iNet router with ease! This script automati
 
 ### 🛡️ [AdGuard Home Updater](https://github.com/Admonstrator/glinet-adguard-updater)
 
-[![Stars](https://img.shields.io/github/stars/Admonstrator/glinet-adguard-updater?style=flat-square)](https://github.com/Admonstrator/glinet-adguard-updater/stargazers)
-[![Forks](https://img.shields.io/github/forks/Admonstrator/glinet-adguard-updater?style=flat-square)](https://github.com/Admonstrator/glinet-adguard-updater/network)
-[![License](https://img.shields.io/github/license/Admonstrator/glinet-adguard-updater?style=flat-square)](https://github.com/Admonstrator/glinet-adguard-updater/blob/main/LICENSE)
-[![Latest Release](https://img.shields.io/github/v/release/Admonstrator/glinet-adguard-updater?style=flat-square)](https://github.com/Admonstrator/glinet-adguard-updater/releases/latest)
+[![Stars](https://img.shields.io/github/stars/Admonstrator/glinet-adguard-updater?style=flat-square)](https://github.com/Admonstrator/glinet-adguard-updater/stargazers) [![Forks](https://img.shields.io/github/forks/Admonstrator/glinet-adguard-updater?style=flat-square)](https://github.com/Admonstrator/glinet-adguard-updater/network) [![License](https://img.shields.io/github/license/Admonstrator/glinet-adguard-updater?style=flat-square)](https://github.com/Admonstrator/glinet-adguard-updater/blob/main/LICENSE) [![Latest Release](https://img.shields.io/github/v/release/Admonstrator/glinet-adguard-updater?style=flat-square)](https://github.com/Admonstrator/glinet-adguard-updater/releases/latest)
 
 Keep AdGuard Home up-to-date on your GL.iNet router! This script updates the deeply integrated AdGuard Home installation while preserving your configurations and settings.
 
@@ -77,9 +77,7 @@ Keep AdGuard Home up-to-date on your GL.iNet router! This script updates the dee
 
 ### 🔐 [ACME Certificate Manager](https://github.com/Admonstrator/glinet-enable-acme)
 
-[![Stars](https://img.shields.io/github/stars/Admonstrator/glinet-enable-acme?style=flat-square)](https://github.com/Admonstrator/glinet-enable-acme/stargazers)
-[![Forks](https://img.shields.io/github/forks/Admonstrator/glinet-enable-acme?style=flat-square)](https://github.com/Admonstrator/glinet-enable-acme/network)
-[![License](https://img.shields.io/github/license/Admonstrator/glinet-enable-acme?style=flat-square)](https://github.com/Admonstrator/glinet-enable-acme/blob/main/LICENSE)
+[![Stars](https://img.shields.io/github/stars/Admonstrator/glinet-enable-acme?style=flat-square)](https://github.com/Admonstrator/glinet-enable-acme/stargazers) [![Forks](https://img.shields.io/github/forks/Admonstrator/glinet-enable-acme?style=flat-square)](https://github.com/Admonstrator/glinet-enable-acme/network) [![License](https://img.shields.io/github/license/Admonstrator/glinet-enable-acme?style=flat-square)](https://github.com/Admonstrator/glinet-enable-acme/blob/main/LICENSE)
 
 Enable ACME (Automated Certificate Management Environment) for your GL.iNet router's DDNS domain. Get free, trusted SSL/TLS certificates automatically!
 
@@ -98,9 +96,7 @@ Enable ACME (Automated Certificate Management Environment) for your GL.iNet rout
 
 ### 💬 [GL.iNet Forum Collection](https://github.com/Admonstrator/glinet.forum)
 
-[![Stars](https://img.shields.io/github/stars/Admonstrator/glinet.forum?style=flat-square)](https://github.com/Admonstrator/glinet.forum/stargazers)
-[![Forks](https://img.shields.io/github/forks/Admonstrator/glinet.forum?style=flat-square)](https://github.com/Admonstrator/glinet.forum/network)
-[![License](https://img.shields.io/github/license/Admonstrator/glinet.forum?style=flat-square)](https://github.com/Admonstrator/glinet.forum/blob/main/LICENSE)
+[![Stars](https://img.shields.io/github/stars/Admonstrator/glinet.forum?style=flat-square)](https://github.com/Admonstrator/glinet.forum/stargazers) [![Forks](https://img.shields.io/github/forks/Admonstrator/glinet.forum?style=flat-square)](https://github.com/Admonstrator/glinet.forum/network) [![License](https://img.shields.io/github/license/Admonstrator/glinet.forum?style=flat-square)](https://github.com/Admonstrator/glinet.forum/blob/main/LICENSE)
 
 A curated collection of scripts, tools, threads, and helpful resources from the GL.iNet forum community. This repository serves as a knowledge base and quick reference.
 
@@ -141,13 +137,33 @@ All tools support GL.iNet routers with firmware 4.x, including:
 
 ---
 
+## 📊 Project Statistics
+
+| Project                                                                       | Stars                                                                                                 | Releases | Status   |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | -------- | -------- |
+| [Tailscale Updater](https://github.com/Admonstrator/glinet-tailscale-updater) | ![Stars](https://img.shields.io/github/stars/Admonstrator/glinet-tailscale-updater?style=flat-square) | 38+      | ✅ Active |
+| [AdGuard Updater](https://github.com/Admonstrator/glinet-adguard-updater)     | ![Stars](https://img.shields.io/github/stars/Admonstrator/glinet-adguard-updater?style=flat-square)   | 19+      | ✅ Active |
+| [ACME Manager](https://github.com/Admonstrator/glinet-enable-acme)            | ![Stars](https://img.shields.io/github/stars/Admonstrator/glinet-enable-acme?style=flat-square)       | -        | ✅ Active |
+| [Forum Collection](https://github.com/Admonstrator/glinet.forum)              | ![Stars](https://img.shields.io/github/stars/Admonstrator/glinet.forum?style=flat-square)             | -        | ✅ Active |
+
+### 🏆 Community Recognition
+
+- 🎖️ **GL.iNet Forum Moderator** – Active community leader
+- ⭐ **450+ Combined GitHub Stars** – Trusted by the community
+- 🔧 **9+ Active Contributors** – Growing open-source project
+- 📝 **Featured in Forum** – Multiple highlighted threads
+- 🌍 **Global Reach** – Used by GL.iNet users worldwide
+
+---
+
 ## 💡 Getting Help
 
 Need assistance or have questions?
 
-- 💬 [Join the discussion on GL.iNet Forum](https://forum.gl-inet.com/u/admon/)
-- 🐛 [Report issues on GitHub](https://github.com/Admonstrator)
-- 📧 Contact via forum private message
+- 💬 [Join the discussion on GL.iNet Forum](https://forum.gl-inet.com/u/admon/) – Direct support from the moderator team
+- 💬 [Join GL.iNet Discord](https://link.gl-inet.com/website-discord-support) – Real-time chat and community support
+- 🐛 [Report issues on GitHub](https://github.com/Admonstrator) – Bug reports and feature requests
+- 📧 Contact via forum private message – For private inquiries
 
 ---
 
@@ -179,21 +195,6 @@ These tools are built **by the community, for the community**. Contributions, su
 4. 💬 Join the discussion
 
 Special thanks to all contributors and testers from the GL.iNet forum community!
-
----
-
-## 💖 Support the Project
-
-If you find these tools helpful and want to support their continued development:
-
-<div align="center">
-
-[![GitHub Sponsors](https://img.shields.io/badge/GitHub-Sponsors-EA4AAA?style=for-the-badge&logo=github)](https://github.com/sponsors/admonstrator)
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-FFDD00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/admon)
-[![Ko-fi](https://img.shields.io/badge/Ko--fi-FF5E5B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://ko-fi.com/admon)
-[![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/aaronviehl)
-
-</div>
 
 ---
 
