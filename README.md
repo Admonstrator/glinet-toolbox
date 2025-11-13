@@ -128,7 +128,7 @@ All tools support GL.iNet routers with firmware 4.x, including:
 
 ---
 
-## ⚠️ Important Notes
+# ⚠️ Important Notes
 
 - 📌 **Manual execution recommended** – Do not run these scripts as cron jobs unless explicitly mentioned
 - 💾 **Backup your configuration** – Always backup before making system changes
@@ -137,7 +137,7 @@ All tools support GL.iNet routers with firmware 4.x, including:
 
 ---
 
-## 📊 Project Statistics
+# 📊 Project Statistics
 
 | Project                                                                       | Stars                                                                                                 | Releases | Status   |
 | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- | -------- | -------- |
@@ -146,7 +146,7 @@ All tools support GL.iNet routers with firmware 4.x, including:
 | [ACME Manager](https://github.com/Admonstrator/glinet-enable-acme)            | ![Stars](https://img.shields.io/github/stars/Admonstrator/glinet-enable-acme?style=flat-square)       | -        | ✅ Active |
 | [Forum Collection](https://github.com/Admonstrator/glinet.forum)              | ![Stars](https://img.shields.io/github/stars/Admonstrator/glinet.forum?style=flat-square)             | -        | ✅ Active |
 
-### 🏆 Community Recognition
+## 🏆 Community Recognition
 
 - 🎖️ **GL.iNet Forum Moderator** – Active community leader
 - ⭐ **450+ Combined GitHub Stars** – Trusted by the community
@@ -156,7 +156,7 @@ All tools support GL.iNet routers with firmware 4.x, including:
 
 ---
 
-## 💡 Getting Help
+# 💡 Getting Help
 
 Need assistance or have questions?
 
@@ -167,7 +167,7 @@ Need assistance or have questions?
 
 ---
 
-## ⚠️ Disclaimer
+# ⚠️ Disclaimer
 
 All scripts and tools are provided **as-is** without any warranty. Use them at your own risk.
 
@@ -183,11 +183,11 @@ Always read the documentation carefully and understand what a script does before
 
 ---
 
-## 👥 Community & Contributions
+# 👥 Community & Contributions
 
 These tools are built **by the community, for the community**. Contributions, suggestions, and feedback are always welcome!
 
-### How to Contribute
+## How to Contribute
 
 1. 🍴 Fork the respective repository
 2. 🔧 Make your changes
@@ -198,13 +198,13 @@ Special thanks to all contributors and testers from the GL.iNet forum community!
 
 ---
 
-## 📜 License
+# 📜 License
 
 All projects in the GL.iNet Toolbox are licensed under the **MIT License** – see individual repositories for details.
 
 ---
 
-## 🔗 Links
+# 🔗 Links
 
 - 🏠 [GL.iNet Official Website](https://www.gl-inet.com/)
 - 💬 [GL.iNet Forum](https://forum.gl-inet.com/)

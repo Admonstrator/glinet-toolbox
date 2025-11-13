@@ -1,0 +1,150 @@
+name: Update Repository Badges
+
+on:
+  workflow_dispatch:  # Manually triggered
+  schedule:
+    - cron: '0 0 * * 0'  # Run weekly on Sunday at midnight
+
+jobs:
+  update-badges:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Fetch repository statistics
+        id: stats
+        run: |
+          # Function to get repo stats
+          get_repo_stats() {
+            local repo=$1
+            echo "Fetching stats for $repo..."
+            
+            # Get repository data
+            response=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/Admonstrator/$repo")
+            
+            stars=$(echo "$response" | jq -r '.stargazers_count')
+            forks=$(echo "$response" | jq -r '.forks_count')
+            
+            # Get latest release
+            release_response=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+              "https://api.github.com/repos/Admonstrator/$repo/releases/latest")
+            
+            latest_release=$(echo "$release_response" | jq -r '.tag_name // "N/A"')
+            
+            echo "${repo}_stars=$stars"
+            echo "${repo}_forks=$forks"
+            echo "${repo}_release=$latest_release"
+          }
+          
+          # Fetch stats for all repos
+          get_repo_stats "glinet-tailscale-updater" >> $GITHUB_OUTPUT
+          get_repo_stats "glinet-adguard-updater" >> $GITHUB_OUTPUT
+          get_repo_stats "glinet-enable-acme" >> $GITHUB_OUTPUT
+          get_repo_stats "glinet.forum" >> $GITHUB_OUTPUT
+      
+      - name: Update README with static badges
+        run: |
+          # Helper function to create color based on count
+          get_color() {
+            local count=$1
+            if [ "$count" -ge 300 ]; then echo "brightgreen"
+            elif [ "$count" -ge 100 ]; then echo "green"
+            elif [ "$count" -ge 50 ]; then echo "yellowgreen"
+            elif [ "$count" -ge 10 ]; then echo "yellow"
+            else echo "orange"
+            fi
+          }
+          
+          # Tailscale Updater
+          ts_stars="${{ steps.stats.outputs.glinet-tailscale-updater_stars }}"
+          ts_forks="${{ steps.stats.outputs.glinet-tailscale-updater_forks }}"
+          ts_release="${{ steps.stats.outputs.glinet-tailscale-updater_release }}"
+          ts_color=$(get_color $ts_stars)
+          
+          # AdGuard Updater
+          ag_stars="${{ steps.stats.outputs.glinet-adguard-updater_stars }}"
+          ag_forks="${{ steps.stats.outputs.glinet-adguard-updater_forks }}"
+          ag_release="${{ steps.stats.outputs.glinet-adguard-updater_release }}"
+          ag_color=$(get_color $ag_stars)
+          
+          # ACME Manager
+          acme_stars="${{ steps.stats.outputs.glinet-enable-acme_stars }}"
+          acme_forks="${{ steps.stats.outputs.glinet-enable-acme_forks }}"
+          acme_color=$(get_color $acme_stars)
+          
+          # Forum Collection
+          forum_stars="${{ steps.stats.outputs.glinet.forum_stars }}"
+          forum_forks="${{ steps.stats.outputs.glinet.forum_forks }}"
+          forum_color=$(get_color $forum_stars)
+          
+          # Update Tailscale badges
+          sed -i "s|\[\!\[Stars\](https://img\.shields\.io/github/stars/Admonstrator/glinet-tailscale-updater.*\]|[![Stars](https://img.shields.io/badge/stars-${ts_stars}-${ts_color}?style=flat-square)]|g" README.md
+          sed -i "s|\[\!\[Forks\](https://img\.shields\.io/github/forks/Admonstrator/glinet-tailscale-updater.*\]|[![Forks](https://img.shields.io/badge/forks-${ts_forks}-blue?style=flat-square)]|g" README.md
+          sed -i "s|\[\!\[Latest Release\](https://img\.shields\.io/github/v/release/Admonstrator/glinet-tailscale-updater.*\]|[![Latest Release](https://img.shields.io/badge/release-${ts_release}-blue?style=flat-square)]|g" README.md
+          
+          # Update AdGuard badges
+          sed -i "s|\[\!\[Stars\](https://img\.shields\.io/github/stars/Admonstrator/glinet-adguard-updater.*\]|[![Stars](https://img.shields.io/badge/stars-${ag_stars}-${ag_color}?style=flat-square)]|g" README.md
+          sed -i "s|\[\!\[Forks\](https://img\.shields\.io/github/forks/Admonstrator/glinet-adguard-updater.*\]|[![Forks](https://img.shields.io/badge/forks-${ag_forks}-blue?style=flat-square)]|g" README.md
+          sed -i "s|\[\!\[Latest Release\](https://img\.shields\.io/github/v/release/Admonstrator/glinet-adguard-updater.*\]|[![Latest Release](https://img.shields.io/badge/release-${ag_release}-blue?style=flat-square)]|g" README.md
+          
+          # Update ACME badges
+          sed -i "s|\[\!\[Stars\](https://img\.shields\.io/github/stars/Admonstrator/glinet-enable-acme.*\]|[![Stars](https://img.shields.io/badge/stars-${acme_stars}-${acme_color}?style=flat-square)]|g" README.md
+          sed -i "s|\[\!\[Forks\](https://img\.shields\.io/github/forks/Admonstrator/glinet-enable-acme.*\]|[![Forks](https://img.shields.io/badge/forks-${acme_forks}-blue?style=flat-square)]|g" README.md
+          
+          # Update Forum badges
+          sed -i "s|\[\!\[Stars\](https://img\.shields\.io/github/stars/Admonstrator/glinet\.forum.*\]|[![Stars](https://img.shields.io/badge/stars-${forum_stars}-${forum_color}?style=flat-square)]|g" README.md
+          sed -i "s|\[\!\[Forks\](https://img\.shields\.io/github/forks/Admonstrator/glinet\.forum.*\]|[![Forks](https://img.shields.io/badge/forks-${forum_forks}-blue?style=flat-square)]|g" README.md
+          
+          echo "✅ Badges updated successfully"
+      
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet README.md; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add README.md
+          git commit -m "🤖 Update repository badges [automated]"
+          git push
+      
+      - name: Create summary
+        run: |
+          echo "## 📊 Badge Update Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Tailscale Updater" >> $GITHUB_STEP_SUMMARY
+          echo "- ⭐ Stars: ${{ steps.stats.outputs.glinet-tailscale-updater_stars }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 🍴 Forks: ${{ steps.stats.outputs.glinet-tailscale-updater_forks }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 📦 Latest: ${{ steps.stats.outputs.glinet-tailscale-updater_release }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### AdGuard Updater" >> $GITHUB_STEP_SUMMARY
+          echo "- ⭐ Stars: ${{ steps.stats.outputs.glinet-adguard-updater_stars }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 🍴 Forks: ${{ steps.stats.outputs.glinet-adguard-updater_forks }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 📦 Latest: ${{ steps.stats.outputs.glinet-adguard-updater_release }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### ACME Manager" >> $GITHUB_STEP_SUMMARY
+          echo "- ⭐ Stars: ${{ steps.stats.outputs.glinet-enable-acme_stars }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 🍴 Forks: ${{ steps.stats.outputs.glinet-enable-acme_forks }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "### Forum Collection" >> $GITHUB_STEP_SUMMARY
+          echo "- ⭐ Stars: ${{ steps.stats.outputs.glinet.forum_stars }}" >> $GITHUB_STEP_SUMMARY
+          echo "- 🍴 Forks: ${{ steps.stats.outputs.glinet.forum_forks }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ steps.check_changes.outputs.changed }}" == "true" ]; then
+            echo "✅ **README.md was updated with new badge values**" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ **No changes detected - badges are up to date**" >> $GITHUB_STEP_SUMMARY
+          fi
