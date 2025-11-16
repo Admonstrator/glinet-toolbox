@@ -236,6 +236,6 @@ Termius provides powerful SSH client solutions for developers and system adminis
 
 ⭐ If you find this useful, please star the repositories!
 
-*Last updated: 2025-11-13*
+*Last updated: 2025-11-16*
 
 </div>
