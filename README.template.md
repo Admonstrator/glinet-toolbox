@@ -213,23 +213,6 @@ All projects in the GL.iNet Toolbox are licensed under the **MIT License** – s
 
 ---
 
-## 🤝 Sponsors
-
-This project is proudly supported by:
-
-<div align="center">
-
-
-<img src="./images/termius-logo.webp" width="300" alt="GL.iNet Robben Logo" style="border-radius: 10px; margin: 20px 0;">
-
-**[Termius](https://termius.com/)** - The SSH client that works everywhere
-
-Termius provides powerful SSH client solutions for developers and system administrators. Perfect for managing your GL.iNet router and other infrastructure from anywhere.
-
-</div>
-
----
-
 <div align="center">
 
 **Made with ❤️ by [Admon](https://github.com/Admonstrator) for the GL.iNet Community**
