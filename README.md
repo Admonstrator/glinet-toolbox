@@ -100,7 +100,7 @@ Enable ACME (Automated Certificate Management Environment) for your GL.iNet rout
 
 ### 📡 [Can I Haz Reachability?](https://github.com/Admonstrator/can-i-haz-reachability)
 
-[![Stars](https://img.shields.io/badge/stars-{{REACHABILITY_STARS}}-{{REACHABILITY_STARS_COLOR}}?style=flat-square)](https://github.com/Admonstrator/can-i-haz-reachability/stargazers) [![Forks](https://img.shields.io/badge/forks-{{REACHABILITY_FORKS}}-blue?style=flat-square)](https://github.com/Admonstrator/can-i-haz-reachability/network) [![License](https://img.shields.io/badge/license-MIT-yellow?style=flat-square)](https://github.com/Admonstrator/can-i-haz-reachability/blob/main/LICENSE)
+[![Stars](https://img.shields.io/badge/stars-0-orange?style=flat-square)](https://github.com/Admonstrator/can-i-haz-reachability/stargazers) [![Forks](https://img.shields.io/badge/forks-0-blue?style=flat-square)](https://github.com/Admonstrator/can-i-haz-reachability/network) [![License](https://img.shields.io/badge/license-MIT-yellow?style=flat-square)](https://github.com/Admonstrator/can-i-haz-reachability/blob/main/LICENSE)
 
 A professional tool to verify network reachability, TLS configurations, and firewall settings. Check if your GL.iNet router is accessible from the internet, detect CGNAT, and diagnose port forwarding issues.
 
@@ -172,7 +172,7 @@ All tools support GL.iNet routers with firmware 4.x, including:
 | [Tailscale Updater](https://github.com/Admonstrator/glinet-tailscale-updater)     | 440⭐    | 36🍴    | v1.92.5 | ✅ Active |
 | [AdGuard Updater](https://github.com/Admonstrator/glinet-adguard-updater)         | 82⭐      | 8🍴      | v0.107.71   | ✅ Active |
 | [ACME Manager](https://github.com/Admonstrator/glinet-enable-acme)                | 19⭐         | 5🍴         | -                     | ✅ Active |
-| [Can I Haz Reachability?](https://github.com/Admonstrator/can-i-haz-reachability) | {{REACHABILITY_STARS}}⭐ | {{REACHABILITY_FORKS}}🍴 | -                     | ✅ Active |
+| [Can I Haz Reachability?](https://github.com/Admonstrator/can-i-haz-reachability) | 0⭐ | 0🍴 | -                     | ✅ Active |
 
 ### 🏆 Community Recognition
 
